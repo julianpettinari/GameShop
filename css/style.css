@@ -235,14 +235,15 @@ main div.productos section.estrellas div.prod-estrella article{
 
 main div.productos section.estrellas div.prod-estrella article img{
 border-radius: 5px;
+width: 100%;
 }
 main div.productos section.estrellas div.prod-estrella article h3{
     font-size: var(--fontsizeml);
     font-weight: 400;
     color: var(--colorlight);
     position:absolute;
-    right:10px;
-    top:53px;
+    right:15px;
+    bottom:53px;
     z-index: 2;
 }
 
@@ -337,7 +338,6 @@ footer div.bottom-footer p{
         z-index: 5;
         background-color: var(--colorbkgrnd);
         height: 60px;
-
     }
 
     header div.nav nav.header-nav ul{
@@ -349,11 +349,21 @@ footer div.bottom-footer p{
     
     }
 
-
     main div.upper-banner h1{
         width: 330px;
     }
 
+    main div.productos section.estrellas div.prod-estrella{
+        width: 100%;
+    }
+    
+    main div.productos section.estrellas div.prod-estrella article{
+        margin: 10px;
+        position: relative;
+        padding: 0 5px;
+    
+    }
+    
     footer div.upper-redes{
         justify-content:center;
         flex-direction: column;
