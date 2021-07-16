@@ -1,0 +1,16 @@
+:root{
+    --colorbkgrnd: #222222;
+    --colorvivid: #D01418;
+    --colorlight:#F3F3F3;
+    --color4:#619D00;
+    --colortext:#000000;
+    --colorlightbkgrnd: #C4C4C4;
+
+    --fontsizesxxs:10px;
+    --fontsizexs:13px;
+    --fontsizes:16px;
+    --fontsizem:20px;
+    --fontsizeml:25px;
+    --fontsizel:30px;
+    --fontsizexl:40px;
+}

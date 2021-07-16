@@ -1,0 +1,335 @@
+@import url(var.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    /* width: 100vw; */
+}
+header, footer div.upper-redes{
+    background: var(--colorbkgrnd);
+    height: 100px;
+    display: flex;
+    align-content:center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 38px 0 38px;
+
+}
+
+header div.logo,
+footer div.upper-redes div.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0;
+
+}
+
+header div.logo span.game,
+footer div.upper-redes div.logo span.game{
+    margin-left: 22px;
+    color: var(--colorlight);
+    font-weight: 700;
+    font-size: var(--fontsizeml);
+}
+
+header div.logo span.shop,
+footer div.logo span.shop{
+    color: var(--colorvivid);
+    font-weight: 400;
+    font-size: var(--fontsizeml);
+}
+
+header div.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header div.nav nav.header-nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+}
+
+header div.nav nav.header-nav ul li{
+    margin-left: 8px;
+}
+
+header div.nav nav.header-nav ul li a{
+    text-decoration: none;
+    color: var(--colorlight);
+    font-size: var(--fontsizes);
+    font-weight: 700;
+}
+
+header div.nav i.fa-shopping-cart{
+    margin-left: 46px;
+    color: var(--colorvivid);
+    font-size: var(--fontsizem);
+}
+
+header div.nav i.fas.fa-bars{
+    display: none;
+}
+
+main div.upper-banner{
+    height: 512px;
+    background: url(../img/bkg-banner.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main div.upper-banner h1{
+    text-align: center;
+    font-size: var(--fontsizexl);
+    font-weight: 700;
+    color: var(--colorlight);
+}
+
+main div.upper-banner h1 span.colorvivid{
+    font-weight: 700;
+    color: var(--colorvivid);
+}
+
+main div.upper-banner button#buy{
+    margin-top: 30px;
+    background-color: var(--colorvivid);
+    border: none;
+    border-radius: 5px;
+    color: var(--colorlight);
+    width: 220px;
+    height: 60px;
+    font-size: var(--fontsizeml);
+    font-weight: 500;
+
+}
+
+main div.upper-banner button#buy:hover{
+    cursor: pointer;
+}
+
+main div.productos{
+    background: var(--colorlight);
+    /* width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center; */
+
+}
+
+main div.productos section.destacados {
+    padding:40px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+main div.productos h2{
+    font-size: var(--fontsizel);
+    font-weight: 400;
+}
+
+main div.productos section.destacados div.prod-dest{
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0 0 0;
+
+
+}
+
+main div.productos section.destacados div.prod-dest article{
+    background: white;
+    margin:15px 10px;
+    border-radius: 5px;
+    width: 265px;
+    height: 322px;
+}
+
+main div.productos section.destacados div.prod-dest article div.img-product{
+    padding: 30px 68px;
+    height: 70%;
+
+}
+
+hr{
+    color: var(--colorbkgrnd);
+    /* border: ; */
+    height: 0.2px;
+}
+
+main div.productos section.destacados div.prod-dest article div.info-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 30%;
+    padding-left: 20px;
+
+}
+
+main div.productos section.destacados div.prod-dest article div.info-product h4{
+    color:var(--colortext);
+    font-size: var(--fontsizesm);
+}
+
+main div.productos section.destacados div.prod-dest article div.info-product h5{
+    color:var(--colortext);
+    font-size: var(--fontsizexs);
+    font-weight: 400;
+}
+
+main div.productos section.destacados div.prod-dest article div.info-product span{
+    color:var(--color4);
+    font-size: var(--fontsizesxxs);
+}
+
+main div.productos section.estrellas{
+    padding:20px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+main div.productos section.estrellas div.prod-estrella{
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main div.productos section.estrellas div.prod-estrella article{
+    margin: 10px;
+    position: relative;
+
+}
+
+main div.productos section.estrellas div.prod-estrella article img{
+border-radius: 5px;
+}
+main div.productos section.estrellas div.prod-estrella article h3{
+    font-size: var(--fontsizeml);
+    font-weight: 400;
+    color: var(--colorlight);
+    position:absolute;
+    right:10px;
+    top:53px;
+    z-index: 2;
+}
+
+footer{
+    /* tenemos varios estilos del footer compartidas con el header */
+}
+
+
+footer div.upper-redes{
+    height: 216px;
+} 
+
+footer div.upper-redes div.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.upper-redes div.social h2{
+    font-size: var(--fontsizeml);
+    font-weight: 400;
+    color: var(--colorlight);
+
+}
+
+footer div.upper-redes div.social div.icons-social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+footer div.upper-redes div.social div.icons-social i.fab{
+    font-size: var(--fontsizel);
+    font-weight: 400;
+    margin: 20px;
+
+}
+
+i.fab.fa-twitter{
+    color:#14AED0;
+}
+
+i.fab.fa-facebook-f{
+    color:#1476D0;
+}
+
+i.fab.fa-instagram{
+    color:#CE0CFF;
+}
+
+footer div.bottom-footer{
+    background: var(--colorlightbkgrnd);
+    height: 25px;
+}
+
+footer div.bottom-footer p{
+    font-size: var(--fontsizesxxs);
+    color: var(--colortext);
+    text-align: center;
+    line-height: 25px;
+}
+
+
+
+@media (max-width: 480px){
+
+    header, footer div.upper-redes{
+        /* background:red; */
+    }
+
+    header div.nav nav.header-nav, header div.nav i.fa-shopping-cart{
+        display: none;
+    }
+
+    header div.nav i.fas.fa-bars{
+        display:inherit;
+        color: var(--colorlight);
+        font-size: var(--fontsizel);
+    }
+
+    main div.upper-banner h1{
+    
+        width: 330px;
+    }
+
+    footer div.upper-redes{
+        justify-content:center;
+        flex-direction: column;
+    }
+}
